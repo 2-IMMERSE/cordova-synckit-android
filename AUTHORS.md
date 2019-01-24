@@ -4,7 +4,7 @@ The following authors have all licensed their contributions under the licensing 
 
 The original authors of this project are:
 
-## [Institut für Rundfunktechnik](http://www.irt.de/)
+## [Institut für Rundfunktechnik (IRT)](http://www.irt.de/)
 
 * Fabian Sattler
 * Michael Probst <mprobst@irt.de>
