@@ -1,0 +1,21 @@
+{
+  "name": "de.irt.androidsynckit",
+  "version": "0.0.1",
+  "description": "This plugin allow web apps to synchronise their media objects to an external timeline source advertised via DVB-CSS suite of protocols.",
+  "cordova": {
+    "id": "de.irt.androidsynckit",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab-ext.irt.de:2-immerse/synckit.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova"
+  ],
+  "license": "Apache-2.0"
+}

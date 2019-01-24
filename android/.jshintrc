@@ -1,0 +1,14 @@
+{
+	"browserify": true,
+	"undef": true,
+	"unused": "vars",
+	"freeze": true,
+	"latedef": "nofunc",
+	"noarg": true,
+	"strict": true,
+	"eqnull": true,
+	"loopfunc": true,
+	"predef": [
+		"-Promise"
+	]
+}
