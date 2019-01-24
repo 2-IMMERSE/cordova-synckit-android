@@ -7,7 +7,7 @@ Cordova SyncKit Android Plugin is an implementation of the SyncKit API for Andro
 
 This API library implementations  support **interdevice synchronisation** via the DVB-CSS suite of protocols.
 
-The documentation for this API is available in the [README](https://gitlab-ext.irt.de/2-immerse/synckit/tree/master/api) file in the ```/api``` .
+The documentation for this API is available in the [README](https://github.com/2-IMMERSE/cordova-synckit-android/tree/master/api) file in the ```/api``` .
 
 ## Licence and Authors
 
