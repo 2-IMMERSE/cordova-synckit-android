@@ -13,10 +13,10 @@ The documentation for this API is available in the [README](https://gitlab-ext.i
 
 All code and documentation is licensed by the original author and contributors under the Apache License v2.0:
 
-* [British Broadcasting Corporation](http://www.bbc.co.uk/rd) (original author)
-* [Centrum Wiskunde & Informatica](http://www.cwi.nl/)
+* [Centrum Wiskunde & Informatica](http://www.cwi.nl/) (original author)
 * [British Telecommunications (BT) PLC](http://www.bt.com/)
-* [Cisco Systems, Inc.](https://www.cisco.com/)
+* [British Broadcasting Corporation](http://www.bbc.co.uk/rd) 
+
 
 See AUTHORS.md file for a full list of individuals and organisations that have
 contributed to this code.
