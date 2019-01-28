@@ -2,7 +2,7 @@
 
 The SyncKit API is a client library that TV or Companion Screen web apps use to synchronise their media objects to an external timeline source.
 
-The API provides bindings to library implementations that support both **interdevice synchronisation** via DVB-CSS (e.g. intra-home sync) and **distributed synchronisation** via a cloud-based [Synchronisation Service](https://gitlab-ext.irt.de/2-immerse/cloud-sync) (e.g. inter-home sync).
+The API provides bindings to library implementations that support both **interdevice synchronisation** via DVB-CSS (e.g. intra-home sync) and **distributed synchronisation** via a cloud-based [Synchronisation Service](https://github.com/2-IMMERSE/cloud-sync.git) (e.g. inter-home sync).
 
 
 ## API
@@ -27,14 +27,14 @@ A singleton of type ```Synchroniser``` that enables synchronisation to an extern
 | Name | Type | Description |
 | --- | --- | --- |
 | ```contentId``` | ```string``` | A content identifier for the content currently shown on the master device |
-| ```syncTimeline``` | ```object``` | A [CorrelatedClock](https://gitlab-ext.irt.de/2-immerse/dvbcss-clocks) object representing the Synchronisation Timeline. It can be queried for the current time on the timeline. It also has these properties: timeline selector, unitsPerTick, unitsPerSecond and accuracy.|
-| ```wallclock``` | ```object``` | A [CorrelatedClock](https://gitlab-ext.irt.de/2-immerse/dvbcss-clocks) object representing the internal WallClock. It can be queried for its current time or used to set timers. |
+| ```syncTimeline``` | ```object``` | A [CorrelatedClock](https://github.com/bbc/dvbcss-clocks) object representing the Synchronisation Timeline. It can be queried for the current time on the timeline. It also has these properties: timeline selector, unitsPerTick, unitsPerSecond and accuracy.|
+| ```wallclock``` | ```object``` | A [CorrelatedClock](https://github.com/bbc/dvbcss-clocks) object representing the internal WallClock. It can be queried for its current time or used to set timers. |
 
 #### Methods
 
 ##### ```startContentMonitor()```
 For **interdevice** synchronisation, this method uses the sync_url to connect to the CII service endpoint on the TV and receive messages with the following information: a content identifier, WallClock sync service endpoint (CSS-WC) URL, timeline synchronisation service endpoint URL (CSS-TS) and a list of available timelines. <br>
-For **distributed** synchronisation via the cloud-based [Synchronisation Service](https://gitlab-ext.irt.de/2-immerse/cloud-sync), this method uses the sync_url to make an HTTP GET request to the Synchronisation Service instance for this session to retrieve the following information: a content identifier (if applicable), the WallClock sync microservice endpoint URL, timeline synchronisation microservice endpoint URL and a list of available timelines.
+For **distributed** synchronisation via the cloud-based [Synchronisation Service](https://github.com/2-IMMERSE/cloud-sync), this method uses the sync_url to make an HTTP GET request to the Synchronisation Service instance for this session to retrieve the following information: a content identifier (if applicable), the WallClock sync microservice endpoint URL, timeline synchronisation microservice endpoint URL and a list of available timelines.
 
 ###### Parameters:
 
@@ -45,7 +45,7 @@ For **distributed** synchronisation via the cloud-based [Synchronisation Service
 
 ##### ```stopContentMonitor()```
 For **interdevice** synchronisation, this closes the CSS-CII protocol connection and stops reporting contentId changes to the application.
-For **distributed** synchronisation via the cloud-based [Synchronisation Service](https://gitlab-ext.irt.de/2-immerse/cloud-sync), this method stops making HTTP GET requests on the Synchronisation Service interface.
+For **distributed** synchronisation via the cloud-based [Synchronisation Service](https://github.com/2-IMMERSE/cloud-sync), this method stops making HTTP GET requests on the Synchronisation Service interface.
 
 
 
