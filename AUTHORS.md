@@ -21,6 +21,6 @@ This project also includes contributions, made available under the same licensin
 ## [British Broadcasting Corporation](http://www.bbc.co.uk/rd) 
 
 * Rajiv Ramdhany <rajiv.ramdhany@bbc.co.uk>
-* Mark Lomas <Mark.Lomas01@bbc.co.uk>
+* Mark Lomas <mark.lomas01@bbc.co.uk>
 
 
